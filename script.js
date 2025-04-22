@@ -48,4 +48,19 @@ const adicionarGasto = () => {
     gastos.splice(index, 1);
     atualizarLista();
 };
+const editarGasto = (e) => {
+    const index = parseInt(e.target.dataset.index);
+    const gasto = gastos[index];
+    const li = e.target.parentNode.parentNode;
+    li.innerHTML = `
+        <div class="editar-form">
+            <input type="text" value="${gasto.descricao}" id="edit-descricao-${index}">
+            <input type="number" value="${gasto.valor.toFixed(2)}" id="edit-valor-${index}">
+            <button class="salvar" data-index="${index}">Salvar</button>
+            <button class="cancelar">Cancelar</button>
+        </div>
+    `;
+    li.querySelector('.salvar').onclick = salvarEdicao;
+    li.querySelector('.cancelar').onclick = atualizarLista;
+};
 
