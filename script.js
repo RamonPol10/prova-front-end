@@ -20,4 +20,16 @@ const atualizarLista = () => {
             valorFormatado = `<span style="color: red; text-decoration: underline;">R$ ${gasto.valor.toFixed(2)}</span>`;
         }
 
-        
+        li.innerHTML = `
+            <span>${descricaoFormatada} (${valorFormatado}) - ${gasto.categoria}</span>
+            <div>
+                <button class="editar" data-index="${i}">Editar</button>
+                <button class="remover" data-index="${i}">Remover</button>
+            </div>
+        `;
+        listaGastos.appendChild(li);
+        total += gasto.valor;
+    }
+    totalGastos.textContent = total.toFixed(2);
+    document.querySelectorAll('.editar').forEach(btn => btn.onclick = editarGasto);
+};
