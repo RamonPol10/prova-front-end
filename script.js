@@ -33,3 +33,15 @@ const atualizarLista = () => {
     totalGastos.textContent = total.toFixed(2);
     document.querySelectorAll('.editar').forEach(btn => btn.onclick = editarGasto);
 };
+const adicionarGasto = () => {
+    const descricao = descricaoInput.value.trim();
+    const valor = parseFloat(valorInput.value);
+    if (descricao && !isNaN(valor)) {
+        gastos.push({ descricao, valor, categoria: categoriaSelect.value });
+        descricaoInput.value = '';
+        valorInput.value = '';
+        atualizarLista();
+    } else {
+        alert('Preencha os campos.');
+    }
+};
