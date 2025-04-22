@@ -44,4 +44,7 @@ const adicionarGasto = () => {
     } else {
         alert('Preencha os campos.');
     }
+};const removerGasto = (index) => {
+    gastos.splice(index, 1);
+    atualizarLista();
 };
