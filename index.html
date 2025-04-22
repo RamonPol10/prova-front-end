@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Gastos Mensais</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <header>
         <h1>Calculadora de Gastos Mensais</h1>
-        <p>Crie uma aplicação web simples que permita ao usuário registrar seus gastos mensais</p>
+        <p>Crie uma aplicação web simples que permita ao usuário registrar seus gastos diários, visualizar o total acumulado e gerenciar essa lista de forma interativa.</p>
     </header>
+
     <main>
         <section id="cadastro-gastos">
             <h2>Formulário de Cadastro de Gastos</h2>
@@ -18,5 +20,37 @@
                     <label for="descricao">Descrição:</label>
                     <input type="text" id="descricao" name="descricao" placeholder="Ex: Lanche">
                 </div>
+                <div>
+                    <label for="valor">Valor:</label>
+                    <input type="number" id="valor" name="valor" placeholder="Ex: 10.50" step="0.01">
+                </div>
+                <div>
+                    <label for="categoria">Categoria:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="alimentacao">Alimentação</option>
+                        <option value="transporte">Transporte</option>
+                        <option value="lazer">Lazer</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                <button type="button" id="adicionar-gasto">Adicionar Gasto</button>
+            </form>
+        </section>
 
+        <section id="listagem-gastos">
+            <h2>Listagem dos Gastos</h2>
+            <ul id="lista-de-gastos">
+                </ul>
+            <div id="total-gastos">
+                <h3>Total de Gastos: R$ <span id="valor-total">0.00</span></h3>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>&copy; 2025 Calculadora de Gastos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
