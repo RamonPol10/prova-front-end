@@ -1,194 +1,52 @@
 body {
     font-family: sans-serif;
     margin: 20px;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #f4f4f4;
 }
 
-header {
-    background-color: #ccc;
-    color: white;
-    padding: 15px;
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#cadastro {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#cadastro h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-main {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-#cadastro-gastos {
-    background-color: white;
-    padding: 15px;
-    border: 1px solid #ddd;
-    width: 100%;
+#cadastro input[type="text"],
+#cadastro input[type="number"],
+#cadastro select,
+#cadastro button {
+    padding: 10px;
     margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
-@media (min-width: 768px) {
-    #cadastro-gastos {
-        width: 40%;
-        margin-bottom: 0;
-    }
-}
-
-#cadastro-gastos h2 {
-    margin-top: 0;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-#cadastro-gastos div {
-    margin-bottom: 10px;
-}
-
-#cadastro-gastos label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #777;
-}
-
-#cadastro-gastos input[type="text"],
-#cadastro-gastos input[type="number"],
-#cadastro-gastos select {
-    width: calc(100% - 8px);
-    padding: 6px;
-    border: 1px solid #aaa;
-}
-
-#cadastro-gastos button {
+#cadastro button {
     background-color: #5cb85c;
     color: white;
-    padding: 8px 12px;
-    border: none;
     cursor: pointer;
-    font-size: 14px;
 }
 
-#cadastro-gastos button:hover {
+#cadastro button:hover {
     background-color: #4cae4c;
 }
 
-#listagem-gastos {
-    background-color: white;
-    padding: 15px;
-    border: 1px solid #ddd;
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    #listagem-gastos {
-        width: 60%;
-    }
-}
-
-#listagem-gastos h2 {
-    margin-top: 0;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-#lista-de-gastos {
-    list-style: none;
-    padding: 0;
-}
-
-#lista-de-gastos li {
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#lista-de-gastos li:last-child {
-    border-bottom: none;
-}
-
-.item-gasto {
-    flex-grow: 1;
-}
-
-.acoes-gasto button {
-    margin-left: 5px;
-}
-
-.remover-item {
-    background-color: #d9534f;
-    color: white;
-    border: none;
-    padding: 4px 8px;
-    cursor: pointer;
-    font-size: 12px;
-}
-
-.remover-item:hover {
-    background-color: #c9302c;
-}
-
-#total-gastos {
-    margin-top: 15px;
-    padding-top: 10px;
-    border-top: 1px solid #ccc;
-    text-align: right;
-    font-weight: bold;
-    color: #333;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 8px;
-    color: #777;
-    font-size: 0.8em;
-}
-
-.edicao-item {
-    margin-bottom: 8px;
-}
-
-.edicao-item label {
-    display: block;
-    margin-bottom: 3px;
-    font-weight: bold;
-    color: #777;
-}
-
-.edicao-item input[type="text"],
-.edicao-item input[type="number"] {
-    width: calc(100% - 6px);
-    padding: 5px;
-    border: 1px solid #aaa;
-}
-
-.edicao-acoes button {
-    margin-right: 5px;
-    padding: 6px 10px;
-    font-size: 12px;
-}
-
-.salvar-edicao {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.salvar-edicao:hover {
-    background-color: #0056b3;
-}
-
-.cancelar-edicao {
-    background-color: #6c757d;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.cancelar-edicao:hover {
-    background-color: #5a6268;
-}
