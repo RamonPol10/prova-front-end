@@ -49,4 +49,61 @@ h1, h2 {
 #cadastro button:hover {
     background-color: #4cae4c;
 }
+#listagem {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#listagem h2 {
+    margin-bottom: 15px;
+}
+
+#gastos {
+    list-style: none;
+    padding: 0;
+}
+
+#gastos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+#gastos li:last-child {
+    border-bottom: none;
+}
+
+.remover {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.remover:hover {
+    background-color: #c9302c;
+}
+
+#total {
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
 

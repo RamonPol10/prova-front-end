@@ -48,3 +48,4 @@ const adicionarGasto = () => {
     gastos.splice(index, 1);
     atualizarLista();
 };
+
