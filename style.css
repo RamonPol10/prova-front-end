@@ -1,0 +1,11 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333; /* Preto para h1 e h2 */
+}
+
