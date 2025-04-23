@@ -76,4 +76,12 @@ const salvarEdicao = (e) => {
         alert('Preencha os campos para salvar.');
     }
 };
+adicionarBotao.onclick = adicionarGasto;
+listaGastos.onclick = (e) => {
+    if (e.target.classList.contains('remover')) {
+        gastos.splice(parseInt(e.target.dataset.index), 1);
+        atualizarLista();
+    }
+};
 
+atualizarLista();
