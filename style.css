@@ -135,5 +135,13 @@ h1, h2 {
 .salvar:hover {
     background-color: #0056b3;
 }
+.cancelar {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
 
+.cancelar:hover {
+    background-color: #5a6268;
+}
 
