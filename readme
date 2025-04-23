@@ -17,3 +17,26 @@ CSS
 JAVASCRIPT
 
 UTILIZEI OS ARQUIVOS DE OUTROS PROJETOS QUE FIZEMOS EM SALA, CONSULTANDO OS PROJETOS DO GIT HUB
+
+
+Calculadora web simples para adicionar, listar, remover e editar gastos, com totalização.
+
+Uso:
+
+Adicionar: Insira descrição, valor e categoria. Clique em "Adicionar".
+Listar: Gastos aparecem abaixo. Acima de R$ 100 ficam em vermelho sublinhado.
+Remover: Clique no botão "Remover" ao lado do item.
+Editar: Clique em "Editar", altere os campos e clique em "Salvar" ou "Cancelar".
+Total: Soma dos gastos exibida no final.
+
+Tecnologias:
+
+HTML: Estrutura da página.
+CSS: Estilos visuais básicos.
+JavaScript: Lógica de funcionamento.
+Futuro:
+
+Mais categorias.
+Persistência de dados (Local Storage).
+Gráficos.
+Melhorias visuais.
