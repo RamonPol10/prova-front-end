@@ -126,5 +126,14 @@ h1, h2 {
     font-size: 14px;
     cursor: pointer;
 }
+.salvar {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.salvar:hover {
+    background-color: #0056b3;
+}
 
 
