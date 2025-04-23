@@ -63,4 +63,17 @@ const editarGasto = (e) => {
     li.querySelector('.salvar').onclick = salvarEdicao;
     li.querySelector('.cancelar').onclick = atualizarLista;
 };
+const salvarEdicao = (e) => {
+    const index = parseInt(e.target.dataset.index);
+    const li = e.target.parentNode.parentNode;
+    const novaDescricao = li.querySelector(`#edit-descricao-${index}`).value.trim();
+    const novoValor = parseFloat(li.querySelector(`#edit-valor-${index}`).value);
+    if (novaDescricao && !isNaN(novoValor)) {
+        gastos[index].descricao = novaDescricao;
+        gastos[index].valor = novoValor;
+        atualizarLista();
+    } else {
+        alert('Preencha os campos para salvar.');
+    }
+};
 
